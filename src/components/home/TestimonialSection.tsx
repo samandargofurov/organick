@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import background3 from "../../assets/homeImages/Background3.png";
 import star from "../../assets/icon/Star.svg";
-import data from "../../assets/data.json"
+import data from "../../data.json"
 
 const TestimonialSection = () => {
   const testimonials = data.slider

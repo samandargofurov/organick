@@ -1,7 +1,8 @@
 import star from "../../assets/icon/Star.svg";
+import bn from '../../assets/cardImages/bananas.png'
 import arrow from "../../assets/icon/Vector.svg";
 import { NavLink, useNavigate } from "react-router-dom";
-import cardData from "../../assets/data.json";
+import cardData from "../../data.json";
 
 const Offer = () => {
   const filteredCards = cardData.products.slice(12, 16);
@@ -45,7 +46,7 @@ const Offer = () => {
                 <div onClick={() => handleRedirect(el.id)}>
                   <img
                     className="drop-shadow-4xl cursor-pointer w-[207px] h-56"
-                    src={el.image}
+                    src={bn}
                     alt={el.title}
                   />
                 </div>

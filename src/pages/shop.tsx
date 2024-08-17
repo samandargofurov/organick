@@ -1,7 +1,8 @@
 import img from "../assets/shopImages/Banner (2).png";
+import bn from '../assets/cardImages/bananas.png'
 import star from "../assets/icon/Star.svg";
 import { useNavigate } from "react-router-dom";
-import cardData from "../assets/data.json";
+import cardData from "../data.json";
 
 const Shop = () => {
   const filteredCards = cardData.products.slice(0, 12);
@@ -29,7 +30,7 @@ const Shop = () => {
               <div onClick={() => handleRedirect(el.id)}>
                 <img
                   className="drop-shadow-4xl cursor-pointer w-[207px] h-56"
-                  src={el.image}
+                  src={bn}
                   alt={el.title}
                 />
               </div>

@@ -292,7 +292,7 @@
       "icons": {
         "insta": "../../src/assets/icon/Insta.svg",
         "fb": "../../src/assets/icon/Fb.svg",
-        "x": "../../src/assets/icon/Twiter.svg"
+        "x": "../../assets/icon/Twiter.svg"
       }
     }
   ]
