@@ -4,7 +4,7 @@ import cookies from "../assets/homeImages/cookis.png";
 import HeroSection from "../components/home/HeroSection";
 import CategoriesSection from "../components/home/CategoriesSection";
 import TestimonialSection from "../components/home/TestimonialSection";
-import AboutUs from "../components/home/AboutUs";
+import AboutUs from "../components/home/HomeAboutUs";
 import TwoSection from "../components/home/TwoSection";
 import Offer from "../components/home/Offer";
 import EcoFriendly from "../components/home/EcoFriendly";

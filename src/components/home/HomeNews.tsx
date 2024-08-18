@@ -1,7 +1,7 @@
 import arrow from "../../assets/icon/Vector.svg";
 import icon from "../../assets/icon/userIcon1.svg";
 import { NavLink, useNavigate } from "react-router-dom";
-import data from "../../data.json";
+import data from "../../assets/data.json";
 
 const HomeNews = () => {
   const filterCard = data.news.slice(0, 2);

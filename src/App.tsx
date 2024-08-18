@@ -8,6 +8,7 @@ import ShopSingle from "./pages/shopSingle"
 import News from "./pages/news"
 import Projects from "./pages/projects"
 import AboutNew from "./pages/aboutNew"
+import Team from "./pages/team"
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/shop" element={<Layout><Shop /></Layout>}></Route>
         <Route path="/news" element={<Layout><News /></Layout>}></Route>
         <Route path="/projects" element={<Layout><Projects /></Layout>}></Route>
+        <Route path="/ourTeam" element={<Layout><Team /></Layout>}></Route>
         <Route path="/aboutNew/:id" element={<Layout><AboutNew /></Layout>}></Route>
         <Route path="/shopSingle/:id" element={<Layout><ShopSingle /></Layout>}></Route>
 

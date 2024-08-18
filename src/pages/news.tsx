@@ -2,7 +2,7 @@ import img from "../assets/newsImages/Banner.png";
 import icon from "../assets/icon/userIcon.svg";
 import arrow from "../assets/icon/Vector.svg";
 import { useNavigate } from "react-router-dom";
-import data from '../data.json'
+import data from '../assets/data.json'
 
 const News = () => {
   const filterCard = data.news;
