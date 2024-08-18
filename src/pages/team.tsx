@@ -32,7 +32,7 @@ const Team = () => {
               the 1500s, when an unknown printer took a galley.
             </p>
           </div>
-          <div className="flex flex-wrap gap-5 justify-center mt-">
+          <div className="flex flex-wrap gap-5 justify-center mt-10">
             {filterData.map((el) => {
               return (
                 <div key={el.id}>
