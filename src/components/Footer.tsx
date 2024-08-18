@@ -32,13 +32,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="container mx-auto max-w-[1050px] flex justify-between mb-32">
+      </div>
+      <div className="container mx-auto max-w-[1000px] mb-32">
+        <div className="flex justify-between">
           <div className="border-r-2 pr-10 text-end flex flex-col gap-5">
             <h1 className="text-[#274C5B] font-bold text-2xl">Contact Us</h1>
             <div className="flex flex-col gap-2">
               <span className="font-bold text-[#525C60]">Email</span>
-              <span className="text-[#525c60ae]">needhelp@Organia.com</span>
+              <span className="text-[#525c60ae] text-sm">needhelp@Organia.com</span>
             </div>
             <div className="flex flex-col gap-2">
               <span className="font-bold text-[#525C60]">Phone</span>
@@ -46,7 +47,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-2">
               <span className="font-bold text-[#525C60]">Address</span>
-              <span className="text-[#525c60ae]">
+              <span className="text-[#525c60ae] text-sm">
                 88 road, broklyn street, USA
               </span>
             </div>
@@ -92,7 +93,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-l-2 pl-10">
+          <div className="border-l-2 pl-12">
             <div className="flex flex-col gap-5">
               <h1 className="text-[#274C5B] font-bold text-2xl">
                 Utility Pages
@@ -116,6 +117,13 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="border-t-2 border-[#D4D4D4] py-4">
+        <div className="text-center">
+          <span className="text-[#525C60] font-light">Copyright © </span>
+          <span className="font-bold text-[#525C60]">Organick</span>
         </div>
       </div>
     </>
