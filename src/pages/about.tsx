@@ -1,11 +1,11 @@
 import aboutBanner from "../assets/aboutImages/aboutBanner.png";
-import AboutUs from "../components/about/aboutUs";
 import WhyChooseUs from "../components/about/WhyChooseUs";
 import AboutTeam from "../components/about/AboutTeam";
 import spicy from "../assets/aboutImages/spicy.png";
 import nutsFeeds from "../assets/aboutImages/NutsFeesd.png";
 import fruits from "../assets/aboutImages/fruits.png";
 import vegetable from "../assets/aboutImages/vegetable.png";
+import AboutUs from "../components/about/aboutUs";
 
 const About = () => {
   return (
