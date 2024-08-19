@@ -2,10 +2,20 @@ import img from "../assets/newsImages/Banner.png";
 import icon from "../assets/icon/userIcon.svg";
 import arrow from "../assets/icon/Vector.svg";
 import { useNavigate } from "react-router-dom";
-import data from '../assets/data.json'
+import { useEffect, useState } from "react";
 
 const News = () => {
-  const filterCard = data.news;
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const getProducts = async () => {
+      const res = await fetch("/src/assets/data.json", { method: "get" });
+      const data = await res.json();
+      setProducts(data.news);
+    };
+    getProducts();
+  }, []);
+
   const navigate = useNavigate();
 
   const handleRedirect = (id?: any) => {
@@ -26,7 +36,7 @@ const News = () => {
         <div className="container mx-auto max-w-[1050px]">
           <div className="flex flex-wrap justify-center gap-6 mb-28">
             {
-              filterCard.map((item: any, index: number) => {
+              products.map((item: any, index: number) => {
                 return(
                   <div key={index} className="relative mb-16">
               <div>
