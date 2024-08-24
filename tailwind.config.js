@@ -10,7 +10,7 @@ export default {
       },
       fontSize: {
         "4xl": [
-          "42px"
+          "40px"
         ]
       },
       letterSpacing: {

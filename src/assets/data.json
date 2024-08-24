@@ -160,7 +160,7 @@
       "rating": 5
     }
   ],
-  "slider":[
+  "slider": [
     {
       "id": 1,
       "name": "Sara Taylor",
@@ -309,6 +309,44 @@
         "fb": "/src/assets/icon/Fb.svg",
         "x": "/src/assets/icon/Twiter.svg"
       }
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "image": "/src/assets/projectsImages/lemon.png",
+      "title": "Green & Tasty Lemon",
+      "type": "Fruits"
+    },
+    {
+      "id": 2,
+      "image": "/src/assets/projectsImages/carrot.png",
+      "title": "Organic Carrot",
+      "type": "Farmer"
+    },
+    {
+      "id": 3,
+      "image": "/src/assets/projectsImages/leaf.png",
+      "title": "Organic Betel Leaf",
+      "type": "Leaf"
+    },
+    {
+      "id": 4,
+      "image": "/src/assets/projectsImages/tomatos.png",
+      "title": "Natural Tommato",
+      "type": "Fruits"
+    },
+    {
+      "id": 5,
+      "image": "/src/assets/projectsImages/raspberry.png",
+      "title": "Black Raspberry",
+      "type": "Farmer"
+    },
+    {
+      "id": 6,
+      "image": "/src/assets/projectsImages/orange.png",
+      "title": "Honey Orange",
+      "type": "Farmer"
     }
   ]
 }

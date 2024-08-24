@@ -9,22 +9,99 @@ import News from "./pages/news"
 import Projects from "./pages/projects"
 import AboutNew from "./pages/aboutNew"
 import Team from "./pages/team"
+import ProjectDetails from "./pages/projectDetails"
+import Licenses from "./pages/licenses"
+import Changelog from "./pages/changelog"
+import ProtectedPage from "./pages/protectedPage"
+import ContactUs from "./pages/contactUs"
+import Services from "./pages/services"
+
+const routes = [
+  {
+    path: "",
+    element: <Home />,
+    layout: "layout",
+  },
+  {
+    path: "/about",
+    element: <About />,
+    layout: "layout",
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
+    layout: "layout",
+  },
+  {
+    path: "/news",
+    element: <News />,
+    layout: "layout",
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
+    layout: "layout",
+  },
+  {
+    path: "/ourTeam",
+    element: <Team />,
+    layout: "layout",
+  },
+  {
+    path: "/licenses",
+    element: <Licenses />,
+    layout: "layout",
+  },
+  {
+    path: "/services",
+    element: <Services />,
+    layout: "layout",
+  },
+  {
+    path: "/changelog",
+    element: <Changelog />,
+    layout: "layout",
+  },
+  {
+    path: "/contactUs",
+    element: <ContactUs />,
+    layout: "layout",
+  },
+  {
+    path: "/protectedPage",
+    element: <ProtectedPage />,
+    layout: "layout",
+  },
+  {
+    path: "/aboutNew/:id",
+    element: <AboutNew />,
+    layout: "layout",
+  },
+  {
+    path: "/shopSingle/:id",
+    element: <ShopSingle />,
+    layout: "layout",
+  },
+  {
+    path: "/projectDetails/:id",
+    element: <ProjectDetails />,
+    layout: "layout",
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
+    layout: "layout",
+  },
+];
 
 const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout><Home /></Layout>}></Route>
-        <Route path="/about" element={<Layout><About /></Layout>}></Route>
-        <Route path="/shop" element={<Layout><Shop /></Layout>}></Route>
-        <Route path="/news" element={<Layout><News /></Layout>}></Route>
-        <Route path="/projects" element={<Layout><Projects /></Layout>}></Route>
-        <Route path="/ourTeam" element={<Layout><Team /></Layout>}></Route>
-        <Route path="/aboutNew/:id" element={<Layout><AboutNew /></Layout>}></Route>
-        <Route path="/shopSingle/:id" element={<Layout><ShopSingle /></Layout>}></Route>
-
-        <Route path="*" element={<Layout><ErrorPage /></Layout>}></Route>
-      </Routes>
+      {routes?.map((route, index) => (
+        <Route key={index} path={route.path} element={route?.layout === "layout" ? <Layout>{route.element}</Layout> : route.element} />
+      ))}
+    </Routes>
     </>
   )
 }
