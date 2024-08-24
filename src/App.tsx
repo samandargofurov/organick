@@ -15,6 +15,7 @@ import Changelog from "./pages/changelog"
 import ProtectedPage from "./pages/protectedPage"
 import ContactUs from "./pages/contactUs"
 import Services from "./pages/services"
+import QualityStandard from "./pages/qualityStandard"
 
 const routes = [
   {
@@ -65,6 +66,11 @@ const routes = [
   {
     path: "/contactUs",
     element: <ContactUs />,
+    layout: "layout",
+  },
+  {
+    path: "/qualityStandard",
+    element: <QualityStandard />,
     layout: "layout",
   },
   {

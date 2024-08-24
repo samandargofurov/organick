@@ -15,6 +15,7 @@ const Header = () => {
     { label: "Licenses", path: "/licenses" },
     { label: "Changelog", path: "/changelog" },
     { label: "Contact Us", path: "/contactUs" },
+    { label: "Quality Standard", path: "/qualityStandard" },
   ];
 
   const toggleDropdown = () => {

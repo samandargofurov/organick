@@ -1,6 +1,7 @@
 import banner from "../assets/contactUsImages/Banner.png";
 import heroBanner from "../assets/contactUsImages/banana.png";
 import leaf from "../assets/contactUsImages/leaf.png";
+import arrow from "../assets/icon/Vector.svg";
 import location from "../assets/icon/Location.svg";
 import massege from "../assets/icon/massege.svg";
 import phone from "../assets/icon/phone.svg";
@@ -21,7 +22,7 @@ const ContactUs = () => {
             </h3>
           </div>
         </div>
-        <div className="container mx-auto max-w-[1050px] mb-32">
+        <div className="container mx-auto max-w-[1050px] mb-24">
           <div className="flex items-center gap-12">
             <div>
               <img
@@ -127,18 +128,82 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto max-w-[1000px]">
-          <div className="">
-            <div>
-              <div></div>
-              <div></div>
+        <div className="container mx-auto max-w-[900px] mb-32">
+          <div className="flex flex-col gap-14">
+            <div className="flex flex-col gap-12">
+              <div className="flex items-center gap-6">
+                <div className="flex flex-col gap-6">
+                  <span className="text-lg text-[#274c5b] font-bold">
+                    Full Name*
+                  </span>
+                  <div className="border border-[#7EB693] rounded-2xl py-5 px-5 w-[438px]">
+                    <input
+                      type="text"
+                      placeholder="Your Email Address"
+                      className="outline-none bg-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-6">
+                  <span className="text-lg text-[#274c5b] font-bold">
+                    Your Email*
+                  </span>
+                  <div className="border border-[#7EB693] rounded-2xl py-5 px-5 w-[438px]">
+                    <input
+                      type="email"
+                      placeholder="example@yourmail.com"
+                      className="outline-none bg-transparent"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6">
+                <div className="flex flex-col gap-6">
+                  <span className="text-lg text-[#274c5b] font-bold">
+                    Company*
+                  </span>
+                  <div className="border border-[#7EB693] rounded-2xl py-5 px-5 w-[438px]">
+                    <input
+                      type="text"
+                      placeholder="your company name here"
+                      className="outline-none bg-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-6">
+                  <span className="text-lg text-[#274c5b] font-bold">
+                    Subject*
+                  </span>
+                  <div className="border border-[#7EB693] rounded-2xl py-5 px-5 w-[438px]">
+                    <input
+                      type="text"
+                      placeholder="how can we help"
+                      className="outline-none bg-transparent"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <label htmlFor="textarea">
-              Messages*
-              <textarea placeholder="hello there,i would like to talk about how to..."></textarea>
-              </label>
+
+            <div className="flex flex-col gap-6">
+              <span className="text-lg text-[#274c5b] font-bold">Message*</span>
+              <textarea
+                cols={10}
+                rows={6}
+                className="w-full outline-none border border-[#7eb693] rounded-2xl py-4 px-7 resize-none"
+                placeholder="hello there,i would like to talk about how to..."
+              ></textarea>
             </div>
+
+            <button className="flex items-center w-44 gap-2 text-sm font-bold text-[#fff] bg-[#274C5B] transition-all duration-500 hover:bg-[#EFD372] hover:text-[#274c5b] rounded-2xl pt-[20px] pl-[28px] pr-[28px] pb-[20px]">
+              Send Message
+              <div className="bg-[#335B6B] inline-block rounded-full p-1">
+                <img src={arrow} alt="" />
+              </div>
+            </button>
           </div>
         </div>
       </div>
